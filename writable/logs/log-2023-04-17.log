@@ -1,0 +1,89 @@
+INFO - 2023-04-17 07:23:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-17 07:23:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-17 07:23:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-17 07:23:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-17 07:23:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-17 07:23:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-17 07:23:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-17 07:24:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-17 07:24:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-17 07:29:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-17 07:29:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-17 07:29:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-17 07:29:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-17 07:30:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-17 07:30:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-17 07:31:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-17 07:31:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-17 07:37:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-17 07:37:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-17 07:40:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-17 07:40:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-17 07:42:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-17 07:42:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-04-17 08:06:03 --> ErrorException: pg_query(): Query failed: ERROR:  type "geometry" does not exist
+LINE 3:  "geom" GEOMETRY NOT NULL,
+                ^ in C:\xampp1\htdocs\petalokasiobjek\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp1\\htdoc...', 147)
+#1 C:\xampp1\htdocs\petalokasiobjek\system\Database\Postgre\Connection.php(147): pg_query(Object(PgSql\Connection), 'CREATE TABLE "t...')
+#2 C:\xampp1\htdocs\petalokasiobjek\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('CREATE TABLE "t...')
+#3 C:\xampp1\htdocs\petalokasiobjek\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE "t...')
+#4 C:\xampp1\htdocs\petalokasiobjek\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE "t...')
+#5 C:\xampp1\htdocs\petalokasiobjek\app\Database\Migrations\2023-04-17-080506_TabelDataPoint.php(48): CodeIgniter\Database\Forge->createTable('tbl_data_point')
+#6 C:\xampp1\htdocs\petalokasiobjek\system\Database\MigrationRunner.php(877): App\Database\Migrations\TabelDataPoint->up()
+#7 C:\xampp1\htdocs\petalokasiobjek\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#8 C:\xampp1\htdocs\petalokasiobjek\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#9 C:\xampp1\htdocs\petalokasiobjek\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#10 C:\xampp1\htdocs\petalokasiobjek\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#11 C:\xampp1\htdocs\petalokasiobjek\spark(97): CodeIgniter\CLI\Console->run()
+#12 {main}
+ERROR - 2023-04-17 08:08:43 --> ErrorException: pg_query(): Query failed: ERROR:  type "geometry" does not exist
+LINE 3:  "geom" GEOMETRY NOT NULL,
+                ^ in C:\xampp1\htdocs\petalokasiobjek\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp1\\htdoc...', 147)
+#1 C:\xampp1\htdocs\petalokasiobjek\system\Database\Postgre\Connection.php(147): pg_query(Object(PgSql\Connection), 'CREATE TABLE "t...')
+#2 C:\xampp1\htdocs\petalokasiobjek\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('CREATE TABLE "t...')
+#3 C:\xampp1\htdocs\petalokasiobjek\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE "t...')
+#4 C:\xampp1\htdocs\petalokasiobjek\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE "t...')
+#5 C:\xampp1\htdocs\petalokasiobjek\app\Database\Migrations\2023-04-17-080506_TabelDataPoint.php(48): CodeIgniter\Database\Forge->createTable('tbl_data_point')
+#6 C:\xampp1\htdocs\petalokasiobjek\system\Database\MigrationRunner.php(877): App\Database\Migrations\TabelDataPoint->up()
+#7 C:\xampp1\htdocs\petalokasiobjek\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#8 C:\xampp1\htdocs\petalokasiobjek\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#9 C:\xampp1\htdocs\petalokasiobjek\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#10 C:\xampp1\htdocs\petalokasiobjek\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#11 C:\xampp1\htdocs\petalokasiobjek\spark(97): CodeIgniter\CLI\Console->run()
+#12 {main}
+INFO - 2023-04-17 08:40:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-17 08:40:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-17 08:40:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-17 08:40:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-17 08:40:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-17 08:40:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-17 08:42:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-17 08:42:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-17 08:42:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-17 08:42:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-17 08:42:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-17 08:42:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-17 08:42:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-17 08:42:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-17 08:45:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-17 08:45:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-17 08:45:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-17 08:47:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-17 08:47:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-17 08:47:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-17 08:55:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-17 08:55:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-17 08:55:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-17 08:55:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-17 08:55:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-17 08:55:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-17 08:55:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-17 08:55:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-17 08:55:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-17 08:57:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-17 08:57:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-17 08:57:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

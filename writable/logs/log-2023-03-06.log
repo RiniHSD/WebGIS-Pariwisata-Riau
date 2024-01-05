@@ -1,0 +1,459 @@
+CRITICAL - 2023-03-06 06:42:03 --> Undefined array key "logitude"
+in APPPATH\Controllers\Home.php on line 23.
+ 1 APPPATH\Controllers\Home.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "logitude"', 'APPPATH\\Controllers\\Home.php', 23)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->simpan_tambah_data()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-06 06:42:40 --> Undefined array key "logitude"
+in APPPATH\Controllers\Home.php on line 23.
+ 1 APPPATH\Controllers\Home.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "logitude"', 'APPPATH\\Controllers\\Home.php', 23)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->simpan_tambah_data()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-06 07:23:23 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;datalokasiobjeks&quot; does not exist
+LINE 1: INSERT INTO &quot;datalokasiobjeks&quot; (&quot;nama&quot;, &quot;deskripsi&quot;, &quot;latitu...
+                    ^ in C:\xampp1\htdocs\petalokasiobjek\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp1\\htdoc...', 147)
+#1 C:\xampp1\htdocs\petalokasiobjek\system\Database\Postgre\Connection.php(147): pg_query(Object(PgSql\Connection), 'INSERT INTO "da...')
+#2 C:\xampp1\htdocs\petalokasiobjek\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "da...')
+#3 C:\xampp1\htdocs\petalokasiobjek\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "da...')
+#4 C:\xampp1\htdocs\petalokasiobjek\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO "da...', Array, false)
+#5 C:\xampp1\htdocs\petalokasiobjek\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp1\htdocs\petalokasiobjek\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp1\htdocs\petalokasiobjek\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#8 C:\xampp1\htdocs\petalokasiobjek\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#9 C:\xampp1\htdocs\petalokasiobjek\app\Controllers\Home.php(34): CodeIgniter\BaseModel->save(Array)
+#10 C:\xampp1\htdocs\petalokasiobjek\system\CodeIgniter.php(934): App\Controllers\Home->simpan_tambah_data()
+#11 C:\xampp1\htdocs\petalokasiobjek\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#12 C:\xampp1\htdocs\petalokasiobjek\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp1\htdocs\petalokasiobjek\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2023-03-06 07:23:23 --> pg_query(): Query failed: ERROR:  relation &quot;datalokasiobjeks&quot; does not exist
+LINE 1: INSERT INTO &quot;datalokasiobjeks&quot; (&quot;nama&quot;, &quot;deskripsi&quot;, &quot;latitu...
+                    ^
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO "datalokasiobjeks" ("nama", "deskripsi", "latitude", "longitude", "created_at", "updated_at") VALUES (:nama:, :deskripsi:, :latitude:, :longitude:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Home.php(34): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->simpan_tambah_data()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-06 08:21:57 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type numeric: &quot;&quot;
+LINE 1: ...ude&quot;, &quot;created_at&quot;, &quot;updated_at&quot;) VALUES ('', '', '', '', '2...
+                                                             ^ in C:\xampp1\htdocs\petalokasiobjek\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp1\\htdoc...', 147)
+#1 C:\xampp1\htdocs\petalokasiobjek\system\Database\Postgre\Connection.php(147): pg_query(Object(PgSql\Connection), 'INSERT INTO "da...')
+#2 C:\xampp1\htdocs\petalokasiobjek\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "da...')
+#3 C:\xampp1\htdocs\petalokasiobjek\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "da...')
+#4 C:\xampp1\htdocs\petalokasiobjek\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO "da...', Array, false)
+#5 C:\xampp1\htdocs\petalokasiobjek\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp1\htdocs\petalokasiobjek\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp1\htdocs\petalokasiobjek\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#8 C:\xampp1\htdocs\petalokasiobjek\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#9 C:\xampp1\htdocs\petalokasiobjek\app\Controllers\Home.php(34): CodeIgniter\BaseModel->save(Array)
+#10 C:\xampp1\htdocs\petalokasiobjek\system\CodeIgniter.php(934): App\Controllers\Home->simpan_tambah_data()
+#11 C:\xampp1\htdocs\petalokasiobjek\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#12 C:\xampp1\htdocs\petalokasiobjek\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp1\htdocs\petalokasiobjek\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2023-03-06 08:21:57 --> pg_query(): Query failed: ERROR:  invalid input syntax for type numeric: &quot;&quot;
+LINE 1: ...ude&quot;, &quot;created_at&quot;, &quot;updated_at&quot;) VALUES ('', '', '', '', '2...
+                                                             ^
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO "datalokasiobjek" ("nama", "deskripsi", "latitude", "longitude", "created_at", "updated_at") VALUES (:nama:, :deskripsi:, :latitude:, :longitude:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Home.php(34): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->simpan_tambah_data()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-06 08:22:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:22:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:22:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-06 08:22:20 --> Undefined array key "alert"
+in APPPATH\Views\v_input.php on line 42.
+ 1 APPPATH\Views\v_input.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "alert"', 'APPPATH\\Views\\v_input.php', 42)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_input.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('v_input', [], true)
+ 5 APPPATH\Controllers\Home.php(22): view('v_input')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->input()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-06 08:24:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:24:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:24:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:28:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:28:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:28:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:28:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:28:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:28:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-06 08:28:52 --> Undefined array key "succes"
+in APPPATH\Views\v_input.php on line 42.
+ 1 APPPATH\Views\v_input.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "succes"', 'APPPATH\\Views\\v_input.php', 42)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_input.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('v_input', [], true)
+ 5 APPPATH\Controllers\Home.php(23): view('v_input')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->input()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-06 08:31:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:31:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:31:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:32:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:32:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:32:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-06 08:33:21 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type numeric: &quot;&quot;
+LINE 1: ...ude&quot;, &quot;created_at&quot;, &quot;updated_at&quot;) VALUES ('', '', '', '', '2...
+                                                             ^ in C:\xampp1\htdocs\petalokasiobjek\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp1\\htdoc...', 147)
+#1 C:\xampp1\htdocs\petalokasiobjek\system\Database\Postgre\Connection.php(147): pg_query(Object(PgSql\Connection), 'INSERT INTO "da...')
+#2 C:\xampp1\htdocs\petalokasiobjek\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "da...')
+#3 C:\xampp1\htdocs\petalokasiobjek\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "da...')
+#4 C:\xampp1\htdocs\petalokasiobjek\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO "da...', Array, false)
+#5 C:\xampp1\htdocs\petalokasiobjek\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp1\htdocs\petalokasiobjek\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp1\htdocs\petalokasiobjek\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#8 C:\xampp1\htdocs\petalokasiobjek\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#9 C:\xampp1\htdocs\petalokasiobjek\app\Controllers\Home.php(35): CodeIgniter\BaseModel->save(Array)
+#10 C:\xampp1\htdocs\petalokasiobjek\system\CodeIgniter.php(934): App\Controllers\Home->simpan_tambah_data()
+#11 C:\xampp1\htdocs\petalokasiobjek\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#12 C:\xampp1\htdocs\petalokasiobjek\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp1\htdocs\petalokasiobjek\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2023-03-06 08:33:21 --> pg_query(): Query failed: ERROR:  invalid input syntax for type numeric: &quot;&quot;
+LINE 1: ...ude&quot;, &quot;created_at&quot;, &quot;updated_at&quot;) VALUES ('', '', '', '', '2...
+                                                             ^
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO "datalokasiobjek" ("nama", "deskripsi", "latitude", "longitude", "created_at", "updated_at") VALUES (:nama:, :deskripsi:, :latitude:, :longitude:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Home.php(35): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->simpan_tambah_data()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-06 08:33:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:33:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:33:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-06 08:33:57 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type numeric: &quot;&quot;
+LINE 1: ...ude&quot;, &quot;created_at&quot;, &quot;updated_at&quot;) VALUES ('', '', '', '', '2...
+                                                             ^ in C:\xampp1\htdocs\petalokasiobjek\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp1\\htdoc...', 147)
+#1 C:\xampp1\htdocs\petalokasiobjek\system\Database\Postgre\Connection.php(147): pg_query(Object(PgSql\Connection), 'INSERT INTO "da...')
+#2 C:\xampp1\htdocs\petalokasiobjek\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "da...')
+#3 C:\xampp1\htdocs\petalokasiobjek\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "da...')
+#4 C:\xampp1\htdocs\petalokasiobjek\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO "da...', Array, false)
+#5 C:\xampp1\htdocs\petalokasiobjek\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp1\htdocs\petalokasiobjek\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp1\htdocs\petalokasiobjek\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#8 C:\xampp1\htdocs\petalokasiobjek\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#9 C:\xampp1\htdocs\petalokasiobjek\app\Controllers\Home.php(35): CodeIgniter\BaseModel->save(Array)
+#10 C:\xampp1\htdocs\petalokasiobjek\system\CodeIgniter.php(934): App\Controllers\Home->simpan_tambah_data()
+#11 C:\xampp1\htdocs\petalokasiobjek\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#12 C:\xampp1\htdocs\petalokasiobjek\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp1\htdocs\petalokasiobjek\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2023-03-06 08:33:57 --> pg_query(): Query failed: ERROR:  invalid input syntax for type numeric: &quot;&quot;
+LINE 1: ...ude&quot;, &quot;created_at&quot;, &quot;updated_at&quot;) VALUES ('', '', '', '', '2...
+                                                             ^
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO "datalokasiobjek" ("nama", "deskripsi", "latitude", "longitude", "created_at", "updated_at") VALUES (:nama:, :deskripsi:, :latitude:, :longitude:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Home.php(35): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->simpan_tambah_data()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-06 08:34:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:34:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:34:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-06 08:34:56 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type numeric: &quot;&quot;
+LINE 1: ...ude&quot;, &quot;created_at&quot;, &quot;updated_at&quot;) VALUES ('', '', '', '', '2...
+                                                             ^ in C:\xampp1\htdocs\petalokasiobjek\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp1\\htdoc...', 147)
+#1 C:\xampp1\htdocs\petalokasiobjek\system\Database\Postgre\Connection.php(147): pg_query(Object(PgSql\Connection), 'INSERT INTO "da...')
+#2 C:\xampp1\htdocs\petalokasiobjek\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "da...')
+#3 C:\xampp1\htdocs\petalokasiobjek\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "da...')
+#4 C:\xampp1\htdocs\petalokasiobjek\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO "da...', Array, false)
+#5 C:\xampp1\htdocs\petalokasiobjek\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp1\htdocs\petalokasiobjek\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp1\htdocs\petalokasiobjek\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#8 C:\xampp1\htdocs\petalokasiobjek\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#9 C:\xampp1\htdocs\petalokasiobjek\app\Controllers\Home.php(35): CodeIgniter\BaseModel->save(Array)
+#10 C:\xampp1\htdocs\petalokasiobjek\system\CodeIgniter.php(934): App\Controllers\Home->simpan_tambah_data()
+#11 C:\xampp1\htdocs\petalokasiobjek\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#12 C:\xampp1\htdocs\petalokasiobjek\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp1\htdocs\petalokasiobjek\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2023-03-06 08:34:56 --> pg_query(): Query failed: ERROR:  invalid input syntax for type numeric: &quot;&quot;
+LINE 1: ...ude&quot;, &quot;created_at&quot;, &quot;updated_at&quot;) VALUES ('', '', '', '', '2...
+                                                             ^
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO "datalokasiobjek" ("nama", "deskripsi", "latitude", "longitude", "created_at", "updated_at") VALUES (:nama:, :deskripsi:, :latitude:, :longitude:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Home.php(35): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->simpan_tambah_data()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-06 08:35:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:36:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:36:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-06 08:45:28 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type numeric: &quot;&quot;
+LINE 1: ...ude&quot;, &quot;created_at&quot;, &quot;updated_at&quot;) VALUES ('', '', '', '', '2...
+                                                             ^ in C:\xampp1\htdocs\petalokasiobjek\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp1\\htdoc...', 147)
+#1 C:\xampp1\htdocs\petalokasiobjek\system\Database\Postgre\Connection.php(147): pg_query(Object(PgSql\Connection), 'INSERT INTO "da...')
+#2 C:\xampp1\htdocs\petalokasiobjek\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "da...')
+#3 C:\xampp1\htdocs\petalokasiobjek\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "da...')
+#4 C:\xampp1\htdocs\petalokasiobjek\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO "da...', Array, false)
+#5 C:\xampp1\htdocs\petalokasiobjek\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp1\htdocs\petalokasiobjek\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp1\htdocs\petalokasiobjek\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#8 C:\xampp1\htdocs\petalokasiobjek\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#9 C:\xampp1\htdocs\petalokasiobjek\app\Controllers\Home.php(44): CodeIgniter\BaseModel->save(Array)
+#10 C:\xampp1\htdocs\petalokasiobjek\system\CodeIgniter.php(934): App\Controllers\Home->simpan_tambah_data()
+#11 C:\xampp1\htdocs\petalokasiobjek\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#12 C:\xampp1\htdocs\petalokasiobjek\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp1\htdocs\petalokasiobjek\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2023-03-06 08:45:28 --> pg_query(): Query failed: ERROR:  invalid input syntax for type numeric: &quot;&quot;
+LINE 1: ...ude&quot;, &quot;created_at&quot;, &quot;updated_at&quot;) VALUES ('', '', '', '', '2...
+                                                             ^
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO "datalokasiobjek" ("nama", "deskripsi", "latitude", "longitude", "created_at", "updated_at") VALUES (:nama:, :deskripsi:, :latitude:, :longitude:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Home.php(44): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->simpan_tambah_data()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-06 08:45:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:45:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:45:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-06 08:45:55 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type numeric: &quot;&quot;
+LINE 1: ...ude&quot;, &quot;created_at&quot;, &quot;updated_at&quot;) VALUES ('', '', '', '', '2...
+                                                             ^ in C:\xampp1\htdocs\petalokasiobjek\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp1\\htdoc...', 147)
+#1 C:\xampp1\htdocs\petalokasiobjek\system\Database\Postgre\Connection.php(147): pg_query(Object(PgSql\Connection), 'INSERT INTO "da...')
+#2 C:\xampp1\htdocs\petalokasiobjek\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "da...')
+#3 C:\xampp1\htdocs\petalokasiobjek\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "da...')
+#4 C:\xampp1\htdocs\petalokasiobjek\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO "da...', Array, false)
+#5 C:\xampp1\htdocs\petalokasiobjek\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp1\htdocs\petalokasiobjek\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp1\htdocs\petalokasiobjek\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#8 C:\xampp1\htdocs\petalokasiobjek\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#9 C:\xampp1\htdocs\petalokasiobjek\app\Controllers\Home.php(45): CodeIgniter\BaseModel->save(Array)
+#10 C:\xampp1\htdocs\petalokasiobjek\system\CodeIgniter.php(934): App\Controllers\Home->simpan_tambah_data()
+#11 C:\xampp1\htdocs\petalokasiobjek\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#12 C:\xampp1\htdocs\petalokasiobjek\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp1\htdocs\petalokasiobjek\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2023-03-06 08:45:55 --> pg_query(): Query failed: ERROR:  invalid input syntax for type numeric: &quot;&quot;
+LINE 1: ...ude&quot;, &quot;created_at&quot;, &quot;updated_at&quot;) VALUES ('', '', '', '', '2...
+                                                             ^
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO "datalokasiobjek" ("nama", "deskripsi", "latitude", "longitude", "created_at", "updated_at") VALUES (:nama:, :deskripsi:, :latitude:, :longitude:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Home.php(45): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->simpan_tambah_data()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-06 08:45:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:45:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:45:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:46:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:46:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:46:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:46:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-06 08:46:43 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type numeric: &quot;&quot;
+LINE 1: ...ude&quot;, &quot;created_at&quot;, &quot;updated_at&quot;) VALUES ('', '', '', '', '2...
+                                                             ^ in C:\xampp1\htdocs\petalokasiobjek\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp1\\htdoc...', 147)
+#1 C:\xampp1\htdocs\petalokasiobjek\system\Database\Postgre\Connection.php(147): pg_query(Object(PgSql\Connection), 'INSERT INTO "da...')
+#2 C:\xampp1\htdocs\petalokasiobjek\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "da...')
+#3 C:\xampp1\htdocs\petalokasiobjek\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "da...')
+#4 C:\xampp1\htdocs\petalokasiobjek\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO "da...', Array, false)
+#5 C:\xampp1\htdocs\petalokasiobjek\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp1\htdocs\petalokasiobjek\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp1\htdocs\petalokasiobjek\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#8 C:\xampp1\htdocs\petalokasiobjek\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#9 C:\xampp1\htdocs\petalokasiobjek\app\Controllers\Home.php(45): CodeIgniter\BaseModel->save(Array)
+#10 C:\xampp1\htdocs\petalokasiobjek\system\CodeIgniter.php(934): App\Controllers\Home->simpan_tambah_data()
+#11 C:\xampp1\htdocs\petalokasiobjek\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#12 C:\xampp1\htdocs\petalokasiobjek\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp1\htdocs\petalokasiobjek\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2023-03-06 08:46:43 --> pg_query(): Query failed: ERROR:  invalid input syntax for type numeric: &quot;&quot;
+LINE 1: ...ude&quot;, &quot;created_at&quot;, &quot;updated_at&quot;) VALUES ('', '', '', '', '2...
+                                                             ^
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO "datalokasiobjek" ("nama", "deskripsi", "latitude", "longitude", "created_at", "updated_at") VALUES (:nama:, :deskripsi:, :latitude:, :longitude:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Home.php(45): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->simpan_tambah_data()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-06 08:46:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:46:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:46:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-06 08:47:34 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type numeric: &quot;&quot;
+LINE 1: ...ude&quot;, &quot;created_at&quot;, &quot;updated_at&quot;) VALUES ('', '', '', '', '2...
+                                                             ^ in C:\xampp1\htdocs\petalokasiobjek\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp1\\htdoc...', 147)
+#1 C:\xampp1\htdocs\petalokasiobjek\system\Database\Postgre\Connection.php(147): pg_query(Object(PgSql\Connection), 'INSERT INTO "da...')
+#2 C:\xampp1\htdocs\petalokasiobjek\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "da...')
+#3 C:\xampp1\htdocs\petalokasiobjek\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "da...')
+#4 C:\xampp1\htdocs\petalokasiobjek\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO "da...', Array, false)
+#5 C:\xampp1\htdocs\petalokasiobjek\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp1\htdocs\petalokasiobjek\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp1\htdocs\petalokasiobjek\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#8 C:\xampp1\htdocs\petalokasiobjek\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#9 C:\xampp1\htdocs\petalokasiobjek\app\Controllers\Home.php(45): CodeIgniter\BaseModel->save(Array)
+#10 C:\xampp1\htdocs\petalokasiobjek\system\CodeIgniter.php(934): App\Controllers\Home->simpan_tambah_data()
+#11 C:\xampp1\htdocs\petalokasiobjek\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#12 C:\xampp1\htdocs\petalokasiobjek\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp1\htdocs\petalokasiobjek\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2023-03-06 08:47:34 --> pg_query(): Query failed: ERROR:  invalid input syntax for type numeric: &quot;&quot;
+LINE 1: ...ude&quot;, &quot;created_at&quot;, &quot;updated_at&quot;) VALUES ('', '', '', '', '2...
+                                                             ^
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO "datalokasiobjek" ("nama", "deskripsi", "latitude", "longitude", "created_at", "updated_at") VALUES (:nama:, :deskripsi:, :latitude:, :longitude:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Home.php(45): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->simpan_tambah_data()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-06 08:47:37 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type numeric: &quot;&quot;
+LINE 1: ...ude&quot;, &quot;created_at&quot;, &quot;updated_at&quot;) VALUES ('', '', '', '', '2...
+                                                             ^ in C:\xampp1\htdocs\petalokasiobjek\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp1\\htdoc...', 147)
+#1 C:\xampp1\htdocs\petalokasiobjek\system\Database\Postgre\Connection.php(147): pg_query(Object(PgSql\Connection), 'INSERT INTO "da...')
+#2 C:\xampp1\htdocs\petalokasiobjek\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "da...')
+#3 C:\xampp1\htdocs\petalokasiobjek\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "da...')
+#4 C:\xampp1\htdocs\petalokasiobjek\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO "da...', Array, false)
+#5 C:\xampp1\htdocs\petalokasiobjek\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp1\htdocs\petalokasiobjek\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp1\htdocs\petalokasiobjek\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#8 C:\xampp1\htdocs\petalokasiobjek\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#9 C:\xampp1\htdocs\petalokasiobjek\app\Controllers\Home.php(45): CodeIgniter\BaseModel->save(Array)
+#10 C:\xampp1\htdocs\petalokasiobjek\system\CodeIgniter.php(934): App\Controllers\Home->simpan_tambah_data()
+#11 C:\xampp1\htdocs\petalokasiobjek\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#12 C:\xampp1\htdocs\petalokasiobjek\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp1\htdocs\petalokasiobjek\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2023-03-06 08:47:37 --> pg_query(): Query failed: ERROR:  invalid input syntax for type numeric: &quot;&quot;
+LINE 1: ...ude&quot;, &quot;created_at&quot;, &quot;updated_at&quot;) VALUES ('', '', '', '', '2...
+                                                             ^
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO "datalokasiobjek" ("nama", "deskripsi", "latitude", "longitude", "created_at", "updated_at") VALUES (:nama:, :deskripsi:, :latitude:, :longitude:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Home.php(45): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->simpan_tambah_data()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-06 08:47:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:47:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:47:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:49:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:49:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:49:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:49:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:50:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:50:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-06 08:51:31 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type numeric: &quot;&quot;
+LINE 1: ..., &quot;created_at&quot;, &quot;updated_at&quot;) VALUES ('acac', '', '', '', '2...
+                                                             ^ in C:\xampp1\htdocs\petalokasiobjek\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp1\\htdoc...', 147)
+#1 C:\xampp1\htdocs\petalokasiobjek\system\Database\Postgre\Connection.php(147): pg_query(Object(PgSql\Connection), 'INSERT INTO "da...')
+#2 C:\xampp1\htdocs\petalokasiobjek\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "da...')
+#3 C:\xampp1\htdocs\petalokasiobjek\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "da...')
+#4 C:\xampp1\htdocs\petalokasiobjek\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO "da...', Array, false)
+#5 C:\xampp1\htdocs\petalokasiobjek\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp1\htdocs\petalokasiobjek\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp1\htdocs\petalokasiobjek\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#8 C:\xampp1\htdocs\petalokasiobjek\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#9 C:\xampp1\htdocs\petalokasiobjek\app\Controllers\Home.php(53): CodeIgniter\BaseModel->save(Array)
+#10 C:\xampp1\htdocs\petalokasiobjek\system\CodeIgniter.php(934): App\Controllers\Home->simpan_tambah_data()
+#11 C:\xampp1\htdocs\petalokasiobjek\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#12 C:\xampp1\htdocs\petalokasiobjek\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp1\htdocs\petalokasiobjek\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2023-03-06 08:51:31 --> pg_query(): Query failed: ERROR:  invalid input syntax for type numeric: &quot;&quot;
+LINE 1: ..., &quot;created_at&quot;, &quot;updated_at&quot;) VALUES ('acac', '', '', '', '2...
+                                                             ^
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO "datalokasiobjek" ("nama", "deskripsi", "latitude", "longitude", "created_at", "updated_at") VALUES (:nama:, :deskripsi:, :latitude:, :longitude:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Home.php(53): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->simpan_tambah_data()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-06 08:51:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:51:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:51:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:52:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:52:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:52:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:58:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:00:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:04:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:06:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:07:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
